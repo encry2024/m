@@ -37,6 +37,138 @@ return [
     ],
 
     'backend' => [
+        'suppliers' => [
+            'create'              => 'Create Supplier',
+            'deleted'             => 'Deleted Suppliers',
+            'edit'                => 'Edit Supplier',
+            'management'          => 'Supplier Management',
+
+            'table' => [
+                'created_at'        =>  'Date Created',
+                'updated_at'        =>  'Date Updated',
+                'email'             =>  'Company E-mail',
+                'id'                =>  'ID',
+                'tin'               =>  'TIN',
+                'name'              =>  'Company Name',
+                'contact_person'    =>  'Contact Person',
+                'contact_number'    =>  'Contact Number',
+                'address'           =>  'Company Address',
+                'no_deleted'        =>  'No Deleted Suppliers',
+                'total'             =>  'supplier(s) total|Supplier(s) total',
+            ],
+
+            'tabs' => [
+                'titles' => [
+                    'overview' => 'Overview',
+                    'history'  => 'History',
+                ],
+
+                'content' => [
+                    'overview' => [
+                        'created_at'        =>  'Date Created',
+                        'updated_at'        =>  'Date Updated',
+                        'email'             =>  'Company E-mail',
+                        'tin'               =>  'TIN',
+                        'id'                =>  'ID',
+                        'name'              =>  'Company Name',
+                        'contact_person'    =>  'Contact Person',
+                        'contact_number'    =>  'Contact Number',
+                        'address'           =>  'Company Address',
+                    ],
+                ],
+            ],
+
+            'view' => ':supplier',
+        ],
+
+        'branches' => [
+            'create'                => 'Create Branch',
+            'deleted'               => 'Deleted Branches',
+            'edit'                  => 'Edit Branch',
+            'management'            => 'Branch Management',
+            'deliver'               => 'Delivery Management',
+            'assign_product'        => 'Assign Product',
+
+            'table' => [
+                'created_at'        =>  'Date Created',
+                'updated_at'        =>  'Date Updated',
+                'email'             =>  'Company E-mail',
+                'tin'               =>  'TIN No#',
+                'id'                =>  'ID',
+                'company_name'      =>  'Company Name',
+                'contact_person'    =>  'Contact Person',
+                'contact_number'    =>  'Contact Number',
+                'address'           =>  'Company Address',
+                'no_deleted'        =>  'No Deleted Branches',
+                'total'             =>  'branch(es) total|Branch(es) total',
+            ],
+
+            'tabs' => [
+                'titles' => [
+                    'overview' => 'Overview',
+                    'history'  => 'History',
+                ],
+
+                'content' => [
+                    'overview' => [
+                        'created_at'        =>  'Date Created',
+                        'updated_at'        =>  'Date Updated',
+                        'email'             =>  'Company E-mail',
+                        'id'                =>  'ID',
+                        'name'              =>  'Company Name',
+                        'contact_person'    =>  'Contact Person',
+                        'contact_number'    =>  'Contact Number',
+                        'address'           =>  'Company Address',
+                    ],
+                ],
+            ],
+
+            'view' => ':branch',
+        ],
+
+        'customers' => [
+            'create'              => 'Create Customer',
+            'deleted'             => 'Deleted Customers',
+            'edit'                => 'Edit Customer',
+            'management'          => 'Customer Management',
+
+            'table' => [
+                'created_at'        =>  'Date Created',
+                'updated_at'        =>  'Date Updated',
+                'email'             =>  'Company E-mail',
+                'tin'               =>  'TIN No#',
+                'id'                =>  'ID',
+                'company_name'      =>  'Company Name',
+                'contact_person'    =>  'Contact Person',
+                'contact_number'    =>  'Contact Number',
+                'address'           =>  'Company Address',
+                'no_deleted'        =>  'No Deleted Customers',
+                'total'             =>  'user total|customers total',
+            ],
+
+            'tabs' => [
+                'titles' => [
+                    'overview' => 'Overview',
+                    'history'  => 'History',
+                ],
+
+                'content' => [
+                    'overview' => [
+                        'created_at'        =>  'Date Created',
+                        'updated_at'        =>  'Date Updated',
+                        'email'             =>  'Company E-mail',
+                        'id'                =>  'ID',
+                        'name'              =>  'Company Name',
+                        'contact_person'    =>  'Contact Person',
+                        'contact_number'    =>  'Contact Number',
+                        'address'           =>  'Company Address',
+                    ],
+                ],
+            ],
+
+            'view' => ':customer',
+        ],
+
         'access' => [
             'roles' => [
                 'create'     => 'Create Role',

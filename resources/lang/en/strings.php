@@ -14,11 +14,29 @@ return [
     */
 
     'backend' => [
+        'suppliers' => [
+            'delete_branch_confirm'  => 'Are you sure you want to delete this branch permanently? Anywhere in the application that references this supplier\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
+            'no_deleted' => 'There are no deleted suppliers.',
+            'restore_branch_confirm' => 'Restore this supplier to its original state?',
+        ],
+
+        'branches' => [
+            'delete_branch_confirm'  => 'Are you sure you want to delete this branch permanently? Anywhere in the application that references this branch\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
+            'no_deleted' => 'There are no deleted branches.',
+            'restore_branch_confirm' => 'Restore this branch to its original state?',
+        ],
+
+        'customers' => [
+            'delete_customer_confirm'  => 'Are you sure you want to delete this customer permanently? Anywhere in the application that references this customer\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
+            'if_confirmed_off'     => '(If confirmed is off)',
+            'no_deactivated' => 'There are no deactivated customers.',
+            'no_deleted' => 'There are no deleted customers.',
+            'restore_customer_confirm' => 'Restore this customer to its original state?',
+        ],
+
         'access' => [
             'users' => [
                 'delete_user_confirm'  => 'Are you sure you want to delete this user permanently? Anywhere in the application that references this user\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
-                'if_confirmed_off'     => '(If confirmed is off)',
-                'no_deactivated' => 'There are no deactivated users.',
                 'no_deleted' => 'There are no deleted users.',
                 'restore_user_confirm' => 'Restore this user to its original state?',
             ],

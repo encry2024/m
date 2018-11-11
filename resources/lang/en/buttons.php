@@ -14,6 +14,14 @@ return [
     */
 
     'backend' => [
+        'branches' => [
+            'delete_permanently'    => 'Delete Permanently',
+        ],
+
+        'customers' => [
+            'delete_permanently'    => 'Delete Permanently',
+        ],
+
         'access' => [
             'users' => [
                 'activate'           => 'Activate',

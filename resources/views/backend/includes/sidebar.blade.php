@@ -4,9 +4,22 @@
             <li class="nav-title">
                 @lang('menus.backend.sidebar.general')
             </li>
+
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('admin.dashboard') }}">
                     <i class="nav-icon icon-speedometer"></i> @lang('menus.backend.sidebar.dashboard')
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/customer*')) }}" href="{{ route('admin.customer.index') }}">
+                    <i class="nav-icon icon-user"></i> @lang('menus.backend.sidebar.customer')
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/supplier*')) }}" href="{{ route('admin.supplier.index') }}">
+                    <i class="nav-icon fa fa-truck"></i> @lang('menus.backend.sidebar.supplier')
                 </a>
             </li>
 

@@ -15,12 +15,26 @@
 
     {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
     @stack('before-styles')
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/chosen_v1.8.3/chosen-bootstrap-css.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/chosen_v1.8.3/chosen.css') }}">
 
     <!-- Check if the language is set to RTL, so apply the RTL layouts -->
     <!-- Otherwise apply the normal LTR layouts -->
     {{ style(mix('css/backend.css')) }}
 
     @stack('after-styles')
+
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/chosen_v1.8.3/chosen.jquery.min.js') }}"></script>
+    <script src="{{ asset('js/moment.js') }}"></script>
+
+    <style>
+        body {
+            font-size: 12px !important;
+            font-weight: 600 !important;
+        }
+    </style>
 </head>
 
 <body class="{{ config('backend.body_classes') }}">

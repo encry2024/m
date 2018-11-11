@@ -142,8 +142,34 @@ return [
     */
 
     'attributes' => [
-
         'backend' => [
+            'supplier' => [
+                'name'              => 'Supplier Name',
+                'tin'               => 'TIN',
+                'contact_person'    => 'Contact Person',
+                'contact_number'    => 'Contact Number',
+                'email'             => 'E-mail (optional)',
+                'address'           => 'Address (optional)'
+            ],
+
+            'customer' => [
+                'branch_name'       => 'Branch Name',
+                'tin'               => 'TIN',
+                'contact_person'    => 'Contact Person',
+                'contact_number'    => 'Contact Number',
+                'email'             => 'Branch E-mail (optional)',
+                'branch_address'    => 'Branch Address (optional)'
+            ],
+
+            'customer' => [
+                'company_name'      => 'Company Name',
+                'tin'               => 'TIN',
+                'contact_person'    => 'Contact Person',
+                'contact_number'    => 'Contact Number',
+                'email'             => 'Company E-mail (optional)',
+                'company_address'   => 'Company Address (optional)'
+            ],
+
             'access' => [
                 'permissions' => [
                     'associated_roles' => 'Associated Roles',

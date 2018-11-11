@@ -14,6 +14,38 @@ return [
     */
 
     'backend' => [
+        'product_suppliers' => [
+            'created'             => 'The supplier\'s product ":product_supplier" was successfully created.',
+            'deleted'             => 'The supplier\'s product ":product_supplier" was successfully deleted.',
+            'deleted_permanently' => 'The supplier\'s product ":product_supplier" was deleted permanently.',
+            'restored'            => 'The supplier\'s product ":product_supplier" was successfully restored.',
+            'updated'             => 'The supplier\'s product ":product_supplier" was successfully updated.'
+        ],
+
+        'suppliers' => [
+            'created'             => 'The supplier ":supplier" was successfully created.',
+            'deleted'             => 'The supplier ":supplier" was successfully deleted.',
+            'deleted_permanently' => 'The supplier ":supplier" was deleted permanently.',
+            'restored'            => 'The supplier ":supplier" was successfully restored.',
+            'updated'             => 'The supplier ":supplier" was successfully updated.'
+        ],
+
+        'branches' => [
+            'created'             => 'The branch ":branch" was successfully created.',
+            'deleted'             => 'The branch ":branch" was successfully deleted.',
+            'deleted_permanently' => 'The branch ":branch" was deleted permanently.',
+            'restored'            => 'The branch ":branch" was successfully restored.',
+            'updated'             => 'The branch ":branch" was successfully updated.'
+        ],
+
+        'customers' => [
+            'created'             => 'The customer ":customer" was successfully created.',
+            'deleted'             => 'The customer ":customer" was successfully deleted.',
+            'deleted_permanently' => 'The customer ":customer" was deleted permanently.',
+            'restored'            => 'The customer ":customer" was successfully restored.',
+            'updated'             => 'The customer ":customer" was successfully updated.'
+        ],
+
         'roles' => [
             'created' => 'The role was successfully created.',
             'deleted' => 'The role was successfully deleted.',

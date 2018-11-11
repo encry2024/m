@@ -3,6 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use App\Listeners\Backend\Customer\CustomerEventListener;
+use App\Listeners\Backend\Branch\BranchEventListener;
+use App\Listeners\Backend\Supplier\SupplierEventListener;
+use App\Listeners\Backend\ProductSupplier\ProductSupplierEventListener;
 
 /**
  * Class EventServiceProvider.
@@ -32,6 +36,10 @@ class EventServiceProvider extends ServiceProvider
          * Auth Subscribers
          */
         \App\Listeners\Frontend\Auth\UserEventListener::class,
+        CustomerEventListener::class,
+        BranchEventListener::class,
+        SupplierEventListener::class,
+        ProductSupplierEventListener::class,
 
         /*
          * Backend Subscribers

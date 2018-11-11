@@ -14,6 +14,33 @@ return [
     */
 
     'backend' => [
+        'suppliers' => [
+            'all'             => 'All Suppliers',
+            'create'          => 'Create Supplier',
+            'deleted'         => 'Deleted Suppliers',
+            'edit'            => 'Edit Supplier',
+            'main'            => 'Suppliers',
+            'view'            => ':supplier',
+        ],
+
+        'branches' => [
+            'all'             => 'All Branches',
+            'create'          => 'Create Branch',
+            'deleted'         => 'Deleted Branches',
+            'edit'            => 'Edit Branch',
+            'main'            => 'Branches',
+            'view'            => ':branch',
+        ],
+
+        'customers' => [
+            'all'             => 'All Customers',
+            'create'          => 'Create Customer',
+            'deleted'         => 'Deleted Customers',
+            'edit'            => 'Edit Customer',
+            'main'            => 'Customers',
+            'view'            => ':customer',
+        ],
+
         'access' => [
             'title' => 'Access',
 
@@ -45,6 +72,8 @@ return [
 
         'sidebar' => [
             'dashboard' => 'Dashboard',
+            'customer'  => 'Customer',
+            'supplier'  => 'Supplier',
             'general'   => 'General',
             'history'   => 'History',
             'system'    => 'System',

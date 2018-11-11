@@ -14,6 +14,46 @@ return [
     */
 
     'backend' => [
+        'product_suppliers' => [
+            'cant_restore'          => 'This :product_supplier is not deleted so it can not be restored.',
+            'create_error'          => 'There was a problem creating this :product_supplier. Please try again.',
+            'delete_error'          => 'There was a problem deleting this :product_supplier. Please try again.',
+            'delete_first'          => 'This :product_supplier must be deleted first before it can be destroyed permanently.',
+            'not_found'             => 'That :product_supplier does not exist.',
+            'restore_error'         => 'There was a problem restoring this :product_supplier. Please try again.',
+            'update_error'          => 'There was a problem updating this :product_supplier. Please try again.',
+        ],
+
+        'suppliers' => [
+            'cant_restore'          => 'This :supplier is not deleted so it can not be restored.',
+            'create_error'          => 'There was a problem creating this :supplier. Please try again.',
+            'delete_error'          => 'There was a problem deleting this :supplier. Please try again.',
+            'delete_first'          => 'This :supplier must be deleted first before it can be destroyed permanently.',
+            'not_found'             => 'That :supplier does not exist.',
+            'restore_error'         => 'There was a problem restoring this :supplier. Please try again.',
+            'update_error'          => 'There was a problem updating this :supplier. Please try again.',
+        ],
+
+        'branches' => [
+            'cant_restore'          => 'This :branch is not deleted so it can not be restored.',
+            'create_error'          => 'There was a problem creating this :branch. Please try again.',
+            'delete_error'          => 'There was a problem deleting this :branch. Please try again.',
+            'delete_first'          => 'This :branch must be deleted first before it can be destroyed permanently.',
+            'not_found'             => 'That :branch does not exist.',
+            'restore_error'         => 'There was a problem restoring this :branch. Please try again.',
+            'update_error'          => 'There was a problem updating this :branch. Please try again.',
+        ],
+
+        'customers' => [
+            'cant_restore'          => 'This :customer is not deleted so it can not be restored.',
+            'create_error'          => 'There was a problem creating this :customer. Please try again.',
+            'delete_error'          => 'There was a problem deleting this :customer. Please try again.',
+            'delete_first'          => 'This :customer must be deleted first before it can be destroyed permanently.',
+            'not_found'             => 'That :customer does not exist.',
+            'restore_error'         => 'There was a problem restoring this :customer. Please try again.',
+            'update_error'          => 'There was a problem updating this :customer. Please try again.',
+        ],
+
         'access' => [
             'roles' => [
                 'already_exists'    => 'That role already exists. Please choose a different name.',
